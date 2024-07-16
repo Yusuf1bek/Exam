@@ -1,0 +1,150 @@
+.hero-section {
+    padding: 200px 0;
+    background-image: url("../../images/hero__bg.png");
+    background-repeat: no-repeat;
+    background-size: 1280px 577px;
+    background-position: center;
+}
+.hero__content-wrapper{
+    width: 500px;
+    margin-left: 366px;
+    margin-bottom: 86px;
+    text-align: center;
+}
+.hero__title {
+    margin-top: 125px;
+    @include textStyle($FS:40px, $FW:900, $LH:48px, $MB:32px, $CLR:$title-color-white);
+}
+.hero__text {
+    @include textStyle($FS:16px, $FW:400, $LH:24px, $MB:32px, $CLR:$text-color-white);
+}
+.hero__list {
+    margin-left: 50px;
+    @include display($items:center, $space:none, $gap:30px);
+}
+.hero__item {
+    width: 350px;
+    padding: 50px ;
+    text-align: center;
+    border-radius: 10px;
+    background-color:#0E8784;
+}
+.hero__item:last-child{
+    padding: 60px;
+}
+.hero__img {
+    margin-bottom: 56px;
+}
+.hero__item:last-child > img{
+    margin-bottom: 60px;
+}
+.hero__subtitle {
+    @include textStyle($FS:24px, $FW:900, $LH:32px, $MB:24px, $CLR:$title-color-white);
+}
+.hero__subtext {
+    @include textStyle($FS:16px, $FW:400, $LH:26px, $MB:0px, $CLR:$text-color-white);
+
+}
+
+// tabllet
+@media only screen and (max-width:900px){
+    .hero-section {
+        padding: 140px 0;
+        background-image: url("../../images/hero__bg-tablet.png");
+        background-repeat: no-repeat;
+        background-size: 688px 573px;
+        background-position: center;
+    }
+    .hero__content-wrapper{
+        width: 500px;
+        margin-left: 117px;
+        margin-bottom: 86px;
+        margin-top: 460px;
+        text-align: center;
+    }
+    .hero__title {
+        @include textStyle($FS:32px, $FW:900, $LH:48px, $MB:24px, $CLR:$title-color-white);
+    }
+    .hero__text {
+        @include textStyle($FS:15px, $FW:400, $LH:25px, $MB:70px, $CLR:$text-color-white);
+    }
+    .hero__list {
+        margin-left: 15px;
+        flex-direction: column;
+    }
+    .hero__item {
+        width: 573px;
+        padding: 50px ;
+        border-radius: 10px;
+        text-align: start;
+        @include display($items:center, $space:start, $gap:55px);
+        background-color:#0E8784;
+    }
+    .hero__item:last-child{
+        padding: 60px;
+    }
+    .hero__img {
+        margin-bottom: 0px;
+    }
+    .hero__item:last-child > img{
+        margin-bottom: 0px;
+    }
+    .hero__subtitle {
+        @include textStyle($FS:24px, $FW:900, $LH:32px, $MB:16px, $CLR:$title-color-white);
+    }
+    .hero__subtext {
+        @include textStyle($FS:15px, $FW:400, $LH:25px, $MB:0px, $CLR:$text-color-white);
+    
+    }
+}
+// mobile
+@media only screen and (max-width:500px){
+    .hero-section {
+        padding: 120px 10px;
+        background-image: url("../../images/hero__bg-tablet.png");
+        background-repeat: no-repeat;
+        background-size: 327px 1057px;
+        background-position: center;
+    }
+    .hero__content-wrapper{
+        width: 279px;
+        margin-left: 74px;
+        margin-bottom: 64px;
+        margin-top: 460px;
+        text-align: center;
+    }
+    .hero__title {
+        @include textStyle($FS:28px, $FW:900, $LH:28px, $MB:24px, $CLR:$title-color-white);
+    }
+    .hero__text {
+        @include textStyle($FS:15px, $FW:400, $LH:25px, $MB:0px, $CLR:$text-color-white);
+    }
+    .hero__list {
+        margin-left: 15px;
+        flex-direction: column;
+    }
+    .hero__item {
+        width: 279px;
+        padding: 50px ;
+        border-radius: 10px;
+        text-align: center;
+        background-color:#0E8784;
+        flex-direction: column;   
+    }
+    .hero__item:last-child{
+        padding: 60px;
+    }
+    .hero__img {
+        margin-bottom: 0px;
+    }
+    .hero__item:last-child > img{
+        margin-bottom: 0px;
+    }
+    .hero__subtitle {
+        @include textStyle($FS:24px, $FW:900, $LH:32px, $MB:16px, $CLR:$title-color-white);
+    }
+    .hero__subtext {
+        @include textStyle($FS:15px, $FW:400, $LH:25px, $MB:0px, $CLR:$text-color-white);
+    
+    }
+}

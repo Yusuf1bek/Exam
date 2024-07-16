@@ -1,0 +1,110 @@
+.site-footer {
+    padding: 47px 85px;
+    background-color: #2C343E;
+}
+.footer {
+    @include display($items:center, $space:space-between, $gap:0px);
+}
+.footer__logo-link {
+    display: inline-block;
+}
+.footer__list {
+    @include display($items:center, $space:space-between, $gap:33px);
+}
+.footer__link {
+    @include textStyle($FS:12px, $FW:700, $LH:15px, $MB:42px, $CLR:#83888F);
+    transition: all 0.3s ease;
+    &:hover{
+        color: #FEFCF7;
+    }
+}
+.footer__wrapper {
+    @include display($items:center, $space:space-between, $gap:24px);
+}
+.footer__social {
+    color: white;
+    transition: all 0.3s ease;
+
+    &:hover{
+        color:#FDD6BA;
+    }
+
+    
+}
+
+//tablet
+@media only screen and (max-width:900px){
+    .site-footer {
+        padding: 47px 85px;
+        background-color: #2C343E;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .footer__logo-link {
+        display: inline-block;
+    }
+    .footer__list {
+        @include display($items:center, $space:space-between, $gap:33px);
+    }
+    .footer__link {
+        @include textStyle($FS:12px, $FW:700, $LH:15px, $MB:42px, $CLR:#83888F);
+        transition: all 0.3s ease;
+        &:hover{
+            color: #FEFCF7;
+        }
+    }
+    .footer__wrapper {
+        @include display($items:center, $space:space-between, $gap:24px);
+    }
+    .footer__social {
+        color: white;
+        transition: all 0.3s ease;
+    
+        &:hover{
+            color:#FDD6BA;
+        }
+    
+        
+    }
+}
+
+//mobile
+@media only screen and (max-width:500px){
+    .site-footer {
+        padding: 47px 85px;
+        background-color: #2C343E;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 48px;
+    }
+    .footer__logo-link {
+        display: inline-block;
+    }
+    .footer__list {
+        flex-direction: column;
+        gap: 14px;
+    }
+    .footer__link {
+        @include textStyle($FS:12px, $FW:700, $LH:15px, $MB:42px, $CLR:#83888F);
+        transition: all 0.3s ease;
+        &:hover{
+            color: #FEFCF7;
+        }
+    }
+    .footer__wrapper {
+        @include display($items:center, $space:space-between, $gap:24px);
+    }
+    .footer__social {
+        color: white;
+        transition: all 0.3s ease;
+    
+        &:hover{
+            color:#FDD6BA;
+        }
+    
+        
+    }
+}
